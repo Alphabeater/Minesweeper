@@ -1,2 +1,2 @@
 # Minesweeper
- CLI minesweeper game
+https://hyperskill.org/projects/8
