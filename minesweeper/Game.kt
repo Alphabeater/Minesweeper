@@ -63,7 +63,7 @@ class Game(private val dim: Int) {
     }
 
     fun printBoard() {
-        println("\n │123456789│\n—│—————————│")
+        println("\n │1 2 3 4 5 6 7 8 9 │\n—│——————————————————│")
         for (i in board.indices) {
             print("${i + 1}│")
             for (j in board[i].indices) {
@@ -76,12 +76,12 @@ class Game(private val dim: Int) {
                                 9 -> 'X'
                                 else -> board[i][j].value
                             }
-                        }}"/* + ' '*/
+                        }}" + ' '
                 )
             }
             println("│")
         }
-        println("—│—————————│")
+        println("—│——————————————————│")
     }
 
     fun revealCell(row: Int, column: Int) {
